@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countDown-Timer</title>
+    <link rel="stylesheet" href="countDownTimer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="countdown">00:00:00</div>
+        <div class="buttons">
+            <div class="hours">            
+                <button id="uphours" onclick="incrementHours()" onmousedown="msDownH()" onmouseup="msUpH()">></button>
+                <button id="downhours" onclick="decrementHours()"><</button>
+            </div>
+            <div class="minuts">
+                <button id="upminuts" onclick="incrementMinuts()" onmousedown="msDownM()" onmouseup="msUpM()">></button>
+                <button id="downminuts" onclick="decrementMinuts()"><</button>
+          </div>
+            <div class="hours">
+            <button id="upseconds" onmousedown="msDownS()" onmouseup="msUpS()" onclick="incrementSeconds()">></button>            
+            <button id="downseconds" onclick="decrementSeconds()" ><</button>
+        </div>
+        </div>
+        <button class="stopTimer" id="myBtn" onclick="startCountdown()">start countDown</button>
+        <button class="stopTimer" onclick="pauseCountdown()">pause countDown</button>
+        <button class="stopTimer" onclick="resumeCountdown()">resume countDown</button>
+        <button class="stopTimer" onclick="stopCountdown()">stop/clear countDown</button>
+        
+    </div>
+
+    <script src="countDownTimer.js"></script>
+</body>
+</html>
